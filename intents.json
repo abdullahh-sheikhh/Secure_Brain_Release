@@ -1,0 +1,102 @@
+{
+  "intents": [
+    {
+      "phrases": ["stop everything", "stop all", "stop the systems", "stop all systems", "turn off everything"],
+      "commands": [
+        {"action": "pemf_stop", "args": []},
+        {"action": "vibration_stop", "args": []},
+        {"action": "ble_play_off", "args": []},
+        {"action": "binaural_stop", "args": []}
+      ],
+      "responses": ["I've stopped all systems for you. Just relax.", "Everything is off now. Take a deep breath.", "All systems stopped. Enjoy the peace."]
+    },
+    {
+      "phrases": ["stop the coils", "stop coils", "stop pemf", "stop the pemf", "stop torso", "stop head", "stop chest", "stop leg"],
+      "commands": [{"action": "pemf_stop", "args": []}],
+      "responses": ["Stopping the coils now.", "I've turned off the coils.", "The coils are now off."]
+    },
+    {
+      "phrases": ["stop vibration", "stop the motors", "stop motors", "stop the vibration", "stop all motors"],
+      "commands": [{"action": "vibration_stop", "args": []}],
+      "responses": ["Turning off the vibration motors.", "Vibration is now off.", "I've stopped the motors for you."]
+    },
+    {
+      "phrases": ["stop binaural", "stop beats", "stop the music", "stop music", "stop the binaural", "turn off beats", "turn off the beats"],
+      "commands": [{"action": "binaural_stop", "args": []}],
+      "responses": ["Stopping the binaural beats.", "I've turned off the beats.", "The binaural beats are now off."]
+    },
+    {
+      "phrases": ["open canopy", "open the canopy", "raise canopy", "raise the canopy"],
+      "commands": [{"action": "canopy_open", "args": []}],
+      "responses": ["Opening the canopy for you.", "I'm raising the canopy now.", "The canopy is opening."]
+    },
+    {
+      "phrases": ["close canopy", "close the canopy", "lower canopy", "lower the canopy"],
+      "commands": [{"action": "canopy_close", "args": []}],
+      "responses": ["Closing the canopy for your comfort.", "I've lowered the canopy.", "The canopy is closing now."]
+    },
+    {
+      "phrases": ["turn on bed", "turn on the bed", "start the bed", "turn the bed on"],
+      "commands": [{"action": "ble_play_on", "args": []}],
+      "responses": ["I've turned the bed on.", "The bed is now on.", "Starting the bed for you."]
+    },
+    {
+      "phrases": ["turn off bed", "turn off the bed", "turn the bed off", "stop the bed"],
+      "commands": [{"action": "ble_play_off", "args": []}],
+      "responses": ["Turning the bed off.", "I've turned off the bed.", "The bed is now off."]
+    },
+    {
+      "phrases": ["start binaural", "start the binaural", "run binaural", "run the binaural", "play binaural", "start beats"],
+      "commands": [{"action": "binaural_start", "args": ["528", "10"]}],
+      "responses": ["Playing soothing binaural beats now.", "I've started the binaural beats.", "The beats are playing."]
+    },
+    {
+      "phrases": ["run all coils", "run all the coils", "start all coils", "turn on all coils", "start all the coils"],
+      "commands": [
+        {"action": "pemf_head", "args": ["80"]},
+        {"action": "pemf_chest", "args": ["80"]},
+        {"action": "pemf_torso", "args": ["80"]},
+        {"action": "pemf_legs", "args": ["80"]}
+      ],
+      "responses": ["Starting all PEMF coils for you.", "All coils are now running.", "I've turned on all the coils."]
+    },
+    {
+      "phrases": ["head coil"],
+      "commands": [{"action": "pemf_head", "args": ["50"]}],
+      "responses": ["Starting the head coil.", "The head coil is on.", "I've started the head coil."]
+    },
+    {
+      "phrases": ["chest coil"],
+      "commands": [{"action": "pemf_chest", "args": ["80"]}],
+      "responses": ["Starting the chest coil.", "The chest coil is on.", "I've started the chest coil."]
+    },
+    {
+      "phrases": ["torso coil"],
+      "commands": [{"action": "pemf_torso", "args": ["80"]}],
+      "responses": ["Starting the torso coil.", "The torso coil is on.", "I've started the torso coil."]
+    },
+    {
+      "phrases": ["leg coil", "legs coil"],
+      "commands": [{"action": "pemf_legs", "args": ["80"]}],
+      "responses": ["Starting the leg coil.", "The leg coil is on.", "I've started the leg coil."]
+    },
+    {
+      "phrases": ["run all motors", "run all the motors", "start all motors", "run motors", "start all the motors"],
+      "commands": [
+        {"action": "vibration_m1", "args": ["30"]},
+        {"action": "vibration_m2", "args": ["30"]}
+      ],
+      "responses": ["Starting all vibration motors.", "All motors are now running.", "I've turned on all vibration motors."]
+    },
+    {
+      "phrases": ["upper vibration", "upper motor", "start the upper motor", "run the upper motor", "top motor"],
+      "commands": [{"action": "vibration_m1", "args": ["30"]}],
+      "responses": ["Starting the upper vibration motor.", "The upper motor is on.", "I've started the upper motor."]
+    },
+    {
+      "phrases": ["lower vibration", "lower motor", "start the lower motor", "run the lower motor", "bottom motor"],
+      "commands": [{"action": "vibration_m2", "args": ["30"]}],
+      "responses": ["Starting the lower vibration motor.", "The lower motor is on.", "I've started the lower motor."]
+    }
+  ]
+}
